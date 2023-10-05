@@ -38,12 +38,13 @@ void main()
 	a = zad1(x);
 	b = zad2(x);
 	c = zad3(x);
-	k = (int)a % 2 + (int)b % 2;
+	k = (int)a % 2 || (int)b % 2;
+	n = (int)a / 3 && (int)b / 3 && (int)c / 3;
 	printf("\nlg^3|x|+y = %.3f\n", a);//1
 	printf("x(t^3+x)= %.3f\n", b);//2
-	printf("e^2x + sqrt(t) = %.3f", c);//3
-	printf("Условие 1 выполнено (1 - да, 0 - нет): %d", k);
-	printf("Условие 2 выполнено (1 - да, 0 - нет): %d", n);
+	printf("e^2x + sqrt(t) = %.3f\n", c);//3
+	printf("Условие 1 выполнено (1 - да, 0 - нет): %d\n", k);
+	printf("Условие 2 выполнено (1 - да, 0 - нет): %d\n", n);
 
 
 }
